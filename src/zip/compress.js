@@ -4,8 +4,7 @@ import { createReadStream, createWriteStream } from 'fs';
 import { existFile } from '../utils/existFile.js';
 import FileSystemError from '../utils/FileSystemError.js';
 
-//TODO !!! add verification of source file existence
-//TODO consider deleting sourse file
+
 export const compress = async () => {
   try {
     const fileUrl = new URL('files/fileToCompress.txt', import.meta.url);

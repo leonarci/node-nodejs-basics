@@ -4,7 +4,6 @@ import { stdin as input, stdout as output } from 'process';
 export const transform = async () => {
   const ts = new Transform({
     transform(chunk, enc, callback) {
-      //TODO find out if this line should be used ---> this.push(chunk);
       const str = chunk.toString();
       if (str.toString().startsWith('EXIT')) process.exit();
       const data = str.replace(/\r?\n/, '')

@@ -18,6 +18,7 @@ export const create = async () => {
     console.log(error.message);
   }
 
+  // another realization using File System flags. fell free to check
   // try {
   //   await writeFile(filePath, 'I am fresh and young', { flag: 'wx' })
   //     .catch(() => { throw new FileSystemError(); });

@@ -24,29 +24,3 @@ export const rename = async () => {
 };
 
 rename();
-
-
-// import { rename as reName, access } from 'fs/promises';
-// import { constants } from 'fs';
-// import { fileURLToPath } from "url";
-// import { join } from 'path';
-// const __dirname = fileURLToPath(new URL('.', import.meta.url));
-// const oldPath = join(__dirname, 'files/wrongFilename.txt');
-// const newPath = join(__dirname, 'files/properFilename.md');
-
-// export const rename = async () => {
-//   const exist = await access(newPath, constants.F_OK)
-//     .then(() => true).catch(() => false);
-
-//   if (exist) {
-//     // TODO create custom Error and specify line and stack
-//     throw new Error('FS operation failed');
-//   } else {
-//     reName(oldPath, newPath)
-//       // TODO create custom Error and specify line and stack
-//       .catch(() => { throw new Error('FS operation failed'); });
-//   }
-
-// };
-
-// rename();
